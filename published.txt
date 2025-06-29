@@ -227,3 +227,24 @@ Transaction Digest: FDVmxssLP5YtXeJePUTHWUt3EkRcokThjNixd9NUN6fZ
 │  │ Amount: -1009880                                                                               │
 │  └──                                                                                              │
 ╰───────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+Test Ran 
+devdanny@devdanny-ProBook:~/Codes/sui-stuff/calculator$ sui move test
+[note] Dependencies on Bridge, MoveStdlib, Sui, and SuiSystem are automatically added, but this feature is disabled for your package because you have explicitly included dependencies on Sui. Consider removing these dependencies from Move.toml.
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING calculator
+Running Move unit tests
+[debug] "Testing calculator module..."
+[debug] "Results:"
+[debug] "Addition"
+[debug] 45
+[debug] "Subtraction"
+[debug] 15
+[debug] "Multiplication"
+[debug] 450
+[debug] "Division"
+[debug] 2
+[ PASS    ] calculator::calculator_tests::test_calculator
+Test result: OK. Total tests: 1; passed: 1; failed: 0
+devdanny@devdanny-ProBook:~/Codes/sui-stuff/calculator$ 

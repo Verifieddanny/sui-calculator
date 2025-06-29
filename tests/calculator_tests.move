@@ -1,18 +1,22 @@
-/*
 #[test_only]
 module calculator::calculator_tests;
-// uncomment this line to import the module
-// use calculator::calculator;
-
-const ENotImplemented: u64 = 0;
+use calculator::calculator;
+use std::debug;
 
 #[test]
 fun test_calculator() {
-    // pass
+    debug::print(&b"Testing calculator module...".to_string());
+    let (add, sub, mult, div) = calculator::answer(30, 15);
+    debug::print(&b"Results:".to_string());
+    debug::print(&b"Addition".to_string());
+    debug::print(&add);
+    debug::print(&b"Subtraction".to_string());
+    debug::print(&sub);
+    debug::print(&b"Multiplication".to_string());
+    debug::print(&mult);
+    debug::print(&b"Division".to_string());
+    debug::print(&div);
+
 }
 
-#[test, expected_failure(abort_code = ::calculator::calculator_tests::ENotImplemented)]
-fun test_calculator_fail() {
-    abort ENotImplemented
-}
-*/
+
